@@ -20,7 +20,14 @@ export function useActions () {
        })
        newMaze[newPosition] = 'avatar'
        setMaze(newMaze)
-       setCount(count + 1)
+       const newCount = count + 1
+       setCount(newCount)
+       return newCount
+    }
+
+    const restart = () => {
+        setMaze(BOARD)
+        setCount(0)
     }
 
     // need work
@@ -65,6 +72,7 @@ export function useActions () {
         maze,
         count,
         changePosition,
-        autoMove
+        autoMove,
+        restart
     }
 }

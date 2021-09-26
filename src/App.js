@@ -1,22 +1,28 @@
 import './App.css'
 
 // components
-import Square from './components/square/square';
+import Square from './components/square/square'
+import Modal from './components/modal/modal'
 
 // hooks
-import { useActions } from './hooks/useActions';
+import { useActions } from './hooks/useActions'
+import { useModal } from './hooks/useModal'
 
 function App() {
-  const { maze, count, changePosition, autoMove } = useActions()
+  const { maze, count, changePosition, autoMove, restart } = useActions()
+  const { modal, openModal, closeModal } = useModal()
 
   const handleMove = (event) => {
     event.preventDefault()
     const newPosition = Number(event.target.id)
-    changePosition(newPosition)
-    if(newPosition === 131) console.log('You Won')
+    const steps = changePosition(newPosition)
+    if(newPosition === 131) openModal(steps)
   }
   return (
     <main className='App'>
+      {
+        modal ? <Modal closeModal={closeModal} restartGame={restart} /> : null
+      }
       <header>
         <h1>Maze Game!</h1> 
         <button onClick={autoMove} >Auto solve</button>
