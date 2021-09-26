@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maze-exercise/static/css/main.2a43c4e2.chunk.css",
+    "main.js": "/maze-exercise/static/js/main.cae70a08.chunk.js",
+    "main.js.map": "/maze-exercise/static/js/main.cae70a08.chunk.js.map",
+    "runtime-main.js": "/maze-exercise/static/js/runtime-main.4b2c5edc.js",
+    "runtime-main.js.map": "/maze-exercise/static/js/runtime-main.4b2c5edc.js.map",
+    "static/js/2.99864755.chunk.js": "/maze-exercise/static/js/2.99864755.chunk.js",
+    "static/js/2.99864755.chunk.js.map": "/maze-exercise/static/js/2.99864755.chunk.js.map",
+    "static/js/3.b2d2977a.chunk.js": "/maze-exercise/static/js/3.b2d2977a.chunk.js",
+    "static/js/3.b2d2977a.chunk.js.map": "/maze-exercise/static/js/3.b2d2977a.chunk.js.map",
+    "index.html": "/maze-exercise/index.html",
+    "static/css/main.2a43c4e2.chunk.css.map": "/maze-exercise/static/css/main.2a43c4e2.chunk.css.map",
+    "static/js/2.99864755.chunk.js.LICENSE.txt": "/maze-exercise/static/js/2.99864755.chunk.js.LICENSE.txt",
+    "static/media/square.css": "/maze-exercise/static/media/groundhog.72f73545.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b2c5edc.js",
+    "static/js/2.99864755.chunk.js",
+    "static/css/main.2a43c4e2.chunk.css",
+    "static/js/main.cae70a08.chunk.js"
+  ]
+}
