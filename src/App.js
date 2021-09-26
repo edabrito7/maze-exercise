@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+// components
+import Square from './components/square/square';
+
+// hooks
+import { useActions } from './hooks/useActions';
 
 function App() {
+  const { maze, count, changePosition, autoMove } = useActions()
+
+  const handleMove = (event) => {
+    event.preventDefault()
+    const newPosition = Number(event.target.id)
+    changePosition(newPosition)
+    if(newPosition === 131) console.log('You Won')
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className='App'>
+      <header>
+        <h1>Maze Game!</h1> 
+        <button onClick={autoMove} >Auto solve</button>
+        <span>moves: {count}</span>
       </header>
-    </div>
+      <section className='container'>
+        {
+          maze.map((element, index) => {
+            return <Square handleClick={handleMove} key={index} index={index} type={element} />
+          })
+        }
+      </section>
+      <footer>Made with &#128147; by <a href='https://github.com/edabrito7'>edabrito7</a> </footer>
+    </main>
   );
 }
 
