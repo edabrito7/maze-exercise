@@ -6,7 +6,6 @@ import { BOARD } from '../utils/utils'
 export function useActions () {
     const [maze, setMaze] = useState(BOARD)
     const [count, setCount] = useState(0)
-    const [start, setStart] = useState(false)
     const [lastCross, setLastCross] = useState(0)
 
     const changePosition = (newPosition) => {
