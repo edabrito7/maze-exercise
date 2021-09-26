@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/maze-exercise/static/css/main.2a43c4e2.chunk.css",
-    "main.js": "/maze-exercise/static/js/main.cae70a08.chunk.js",
-    "main.js.map": "/maze-exercise/static/js/main.cae70a08.chunk.js.map",
+    "main.js": "/maze-exercise/static/js/main.af9b97da.chunk.js",
+    "main.js.map": "/maze-exercise/static/js/main.af9b97da.chunk.js.map",
     "runtime-main.js": "/maze-exercise/static/js/runtime-main.4b2c5edc.js",
     "runtime-main.js.map": "/maze-exercise/static/js/runtime-main.4b2c5edc.js.map",
     "static/js/2.99864755.chunk.js": "/maze-exercise/static/js/2.99864755.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4b2c5edc.js",
     "static/js/2.99864755.chunk.js",
     "static/css/main.2a43c4e2.chunk.css",
-    "static/js/main.cae70a08.chunk.js"
+    "static/js/main.af9b97da.chunk.js"
   ]
 }
